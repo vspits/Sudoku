@@ -28,6 +28,10 @@ public class Game {
     public int[][] getIncompleteBoard(){
         return this.incompleteBoard;
     }
+    
+    public int[][] getCompleteBoard(){
+        return this.completedBoard;
+    }
 
     public Game() {
         System.out.println("Below is your sudoku board. \nThe 0's are blanks for you to fill in:\n");
@@ -40,7 +44,5 @@ public class Game {
         
         System.out.println("Reading left to right, please enter the numbers that "
                 + "\nyou think are correct, pressing enter after each one:");
-        
-//        HandleUserInput handle = new HandleUserInput();
     }
 }

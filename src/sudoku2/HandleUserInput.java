@@ -9,6 +9,7 @@ public class HandleUserInput {
         
         System.out.println("What is the first zero: ");
         int zeroZeroIndex = input.nextInt();
+        incompleteBoard[0][0] = zeroZeroIndex;
         System.out.println("What is the next zero: ");
         int zeroTwoIndex = input.nextInt();
         System.out.println("What is the next zero: ");
