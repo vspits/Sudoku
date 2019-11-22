@@ -1,46 +1,82 @@
 package sudoku2;
 import java.util.Scanner;
-import sudoku2.Game;
 
 public class HandleUserInput {
     
     Scanner input = new Scanner(System.in);
     
+    public HandleUserInput(){
+        
+        System.out.println("What is the first zero: ");
+        int zeroZeroIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int zeroTwoIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int zeroFiveIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int zeroSevenIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int oneTwoIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int oneThreeIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int oneFiveIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int oneSixIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int oneEightIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int twoTwoIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int twoFourIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int twoSevenIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int threeTwoIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int threeFourIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int threeEightIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int fourZeroIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int fourOneIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int fourFourIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int fourSevenIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int fiveZeroIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int fiveTwoIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int fiveFourIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int fiveSixIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int sixOneIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int sixSixIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int sevenZeroIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int sevenTwoIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int sevenThreeIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int sevenFiveIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int sevenSixIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int eightOneIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int eightThreeIndex = input.nextInt();
+        System.out.println("What is the next zero: ");
+        int eightSevenIndex = input.nextInt();
+    
+    }
+    
 //    incompleteBoard[0][0] = input.nextInt();
     
-    
-//    int zeroZeroIndex = input.nextInt();
-//    int zeroTwoIndex = input.nextInt();
-//    int zeroFiveIndex = input.nextInt();
-//    int zeroSevenIndex = input.nextInt();
-//    int oneTwoIndex = input.nextInt();
-//    int oneThreeIndex = input.nextInt();
-//    int oneFiveIndex = input.nextInt();
-//    int oneSixIndex = input.nextInt();
-//    int oneEightIndex = input.nextInt();
-//    int twoTwoIndex = input.nextInt();
-//    int twoFourIndex = input.nextInt();
-//    int twoSevenIndex = input.nextInt();
-//    int threeTwoIndex = input.nextInt();
-//    int threeFourIndex = input.nextInt();
-//    int threeEightIndex = input.nextInt();
-//    int fourZeroIndex = input.nextInt();
-//    int fourOneIndex = input.nextInt();
-//    int fourFourIndex = input.nextInt();
-//    int fourSevenIndex = input.nextInt();
-//    int fiveZeroIndex = input.nextInt();
-//    int fiveTwoIndex = input.nextInt();
-//    int fiveFourIndex = input.nextInt();
-//    int fiveSixIndex = input.nextInt();
-//    int sixOneIndex = input.nextInt();
-//    int sixSixIndex = input.nextInt();
-//    int sevenZeroIndex = input.nextInt();
-//    int sevenTwoIndex = input.nextInt();
-//    int sevenThreeIndex = input.nextInt();
-//    int sevenFiveIndex = input.nextInt();
-//    int sevenSixIndex = input.nextInt();
-//    int eightOneIndex = input.nextInt();
-//    int eightThreeIndex = input.nextInt();
-//    int eightSevenIndex = input.nextInt();
     
 }
