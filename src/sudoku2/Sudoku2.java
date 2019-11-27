@@ -1,12 +1,20 @@
 package sudoku2;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Sudoku2 {
+    
+    Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
         
-        Game game1 = new Game();
+        Board game1 = new Board();
         System.out.println();
-        HandleUserInput display = new HandleUserInput();
-        
+        game1.handleUserInput();
+    }
+    
+    public boolean equalsEachOther(int[][] complete, int[][] incomplete){
+        return Arrays.deepEquals(complete, incomplete);
     }
 }

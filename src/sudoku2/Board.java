@@ -1,6 +1,6 @@
 package sudoku2;
 
-public class Game {
+public class Board {
     
     private final int[][] completedBoard = {
         {4,3,5,2,6,9,7,8,1},
@@ -33,7 +33,7 @@ public class Game {
         return this.completedBoard;
     }
 
-    public Game() {
+    public Board() {
         System.out.println("Below is your sudoku board. \nThe 0's are blanks for you to fill in:\n");
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) 
@@ -44,5 +44,9 @@ public class Game {
         
         System.out.println("Reading left to right, please enter the numbers that "
                 + "\nyou think are correct, pressing enter after each one:");
+    }
+
+    void handleUserInput() {
+        
     }
 }
