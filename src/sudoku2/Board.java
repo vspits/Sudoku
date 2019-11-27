@@ -1,4 +1,5 @@
 package sudoku2;
+import java.util.Arrays;
 
 public class Board {
     
@@ -46,7 +47,12 @@ public class Board {
                 + "\nyou think are correct, pressing enter after each one:");
     }
 
-    void handleUserInput() {
+    public void handleUserInput() {
         
+    }
+    
+    
+    public boolean equalsEachOther(int[][] complete, int[][] incomplete){
+        return Arrays.deepEquals(complete, incomplete);
     }
 }

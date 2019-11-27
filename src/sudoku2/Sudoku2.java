@@ -10,11 +10,16 @@ public class Sudoku2 {
     public static void main(String[] args) {
         
         Board game1 = new Board();
+        
         System.out.println();
+        
         game1.handleUserInput();
-    }
-    
-    public boolean equalsEachOther(int[][] complete, int[][] incomplete){
-        return Arrays.deepEquals(complete, incomplete);
+        
+        if(game1.equalsEachOther(game1.getCompleteBoard(), game1.getIncompleteBoard())){
+            System.out.println("You won!");
+        } else {
+            System.out.println("Try again, you lost.");
+        }
+        
     }
 }
