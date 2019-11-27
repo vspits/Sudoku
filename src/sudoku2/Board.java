@@ -1,8 +1,7 @@
+//NADINE & VIVIAN
 package sudoku2;
 import java.util.Arrays;
 import java.util.Scanner;
-import java.awt.Color;
-import java.awt.Font;
 
 public class Board {
     
