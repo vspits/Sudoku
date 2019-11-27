@@ -1,5 +1,8 @@
 package sudoku2;
 import java.util.Arrays;
+import java.util.Scanner;
+import java.awt.Color;
+import java.awt.Font;
 
 public class Board {
     
@@ -35,22 +38,60 @@ public class Board {
     }
 
     public Board() {
-        System.out.println("Below is your sudoku board. \nThe 0's are blanks for you to fill in:\n");
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) 
-                System.out.printf("%2d ", incompleteBoard[i][j]);
-            System.out.println();
-        }
-        System.out.println();
         
+        System.out.println("Below is your sudoku board. \nThe 0's are blanks for you to fill in:\n");
+        printBoard();
         System.out.println("Reading left to right, please enter the numbers that "
                 + "\nyou think are correct, pressing enter after each one:");
     }
+    
+    public void printBoard(){
+        String x = "    0  1  2   3  4  5   6  7  8";
+        System.out.print("\u001B[34m" + x);
+        for (int i = 0; i < 9; i++) {
+            System.out.println();
+            if(i % 3 == 0){
+                System.out.println("   -----------------------------");
+            }
+            System.out.printf("\u001B[35m%d\u001B[0m ", i);
+            for (int j = 0; j < 9; j++){
+                if(j % 3 == 0){
+                    System.out.print("|");
+                }
+                System.out.printf("%2d ", incompleteBoard[i][j]);
+            }
+            System.out.print("|");
+        }
+        System.out.println("");
+        System.out.println("   -----------------------------");
+        System.out.println();
+    }
 
     public void handleUserInput() {
-        
+        Scanner input = new Scanner(System.in);
+        boolean incomplete = incomplete();
+        do {
+            System.out.println("What coordinate would you like to change? "
+                    + "(FORMAT \u001B[35mj vertical\u001B[0m - \u001B[34mi horizontal\u001B[0m: \u001B[35m0\u001B[0m \u001B[34m0\u001B[0m )"); //i vertical - j horizontal
+            int getX = input.nextInt();
+            int getY = input.nextInt();
+            System.out.print("What number would you like to enter at the chosen coordinate? ");
+            getIncompleteBoard()[getX][getY] = input.nextInt();
+            printBoard();
+        } while (incomplete);
     }
     
+    public boolean incomplete(){
+        boolean isTrue = false;
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++){
+                if(incompleteBoard[i][j] == 0){
+                    isTrue = true;
+                }
+            }
+        }
+        return isTrue;
+    }
     
     public boolean equalsEachOther(int[][] complete, int[][] incomplete){
         return Arrays.deepEquals(complete, incomplete);

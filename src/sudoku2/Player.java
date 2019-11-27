@@ -1,17 +1,13 @@
-
 package sudoku2;
-
 
 public class Player {
     private String firstName;
-    private String lastName;
     private int numOfTimesWon = 0;
     private int numOfTimesLost = 0;
     
-    public Player(String firstName, String lastName)  {  
+    public Player(String firstName)  {  
         this.firstName = firstName;
-        this.lastName = lastName;
-        System.out.printf("Hello %s %s", firstName, lastName);
+        System.out.printf("Hello %s! \n \n", firstName);
     }
     
     public void addToWon(){
